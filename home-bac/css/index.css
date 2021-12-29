@@ -1,0 +1,193 @@
+
+header.header{
+    width: 100%;
+    height: 101vh;
+    margin-top: -140px;
+    background:url(../img/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+header.header>div.header__bg{
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.1) 100%);
+    transform: rotate(-180deg);
+    width: 100%;
+    height: 101vh;
+}
+header.header>div.header__container>div.header__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 101vh;
+}
+
+/* arbitrage */
+
+div.arbitrage>div.container>div.arbitrage__wrap{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+div.arbitrage>div.container>div.arbitrage__wrap>div.arbitrage__bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -70px;
+    background:  rgba(20, 20, 21, 1)url(../img/bd.svg) ;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px;
+    position: relative;
+}
+
+div.arbitrage>div.container>div.arbitrage__wrap>div.arbitrage__bg>img.arbitrage__left__img{
+    position: absolute;
+    top: 25px;
+    left:0;
+}
+div.arbitrage>div.container>div.arbitrage__wrap>div.arbitrage__bg>img.arbitrage__right__img{
+    position: absolute;
+    bottom: 25px;
+    right:0;
+}
+div.arbitrage>div.container>div.arbitrage__wrap>div.arbitrage__bg>div.arbitrage__content{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 90px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.arbitrage>div.container>div.arbitrage__wrap>div.arbitrage__bg>div.arbitrage__content>div.arbitrage__content_item{
+    padding: 0px 30px;
+    flex: 1 1 400px;
+}
+div.arbitrage>div.container>div.arbitrage__wrap>div.arbitrage__bg>div.arbitrage__content>div.arbitrage__content_item>h2{
+    margin: 30px 0px;
+}
+div.arbitrage>div.container>div.arbitrage__wrap>div.arbitrage__bg>div.arbitrage__content>div.arbitrage__content_item>div.arbitrage__img__one{
+    margin-bottom: 30px;
+}
+div.arbitrage>div.container>div.arbitrage__wrap>div.arbitrage__bg>div.arbitrage__content>div.arbitrage__content_item>p{
+    margin-bottom: 30px;
+}
+/*     filter: inherit; */
+/* Card */
+.card{
+    position: relative;
+}
+.card__wrap{
+    position: absolute;
+    top: -240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card__wrap>div.card__scroll{
+    flex: 1 1 200px;
+}
+.card__wrap>div.card__container{
+    flex: 1 1 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card__wrap>div.card__container>div.card__item__wrap{
+    flex: 0 1 322px;
+    /* height: 400px; */
+}
+.card__item{
+    background-color: transparent;
+    margin: -28px 0 0 0;
+    padding: 0 0 37px 34px;
+    width: 100% !important;
+    transition: all ease 800ms;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card__item:before {
+    position: absolute;
+    content: "";
+    left: -6px;
+    top: -6px;
+    background: url(../img/card_bd_active.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.card__item:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: url(../img/article-bd.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.card__item:hover:before {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+}
+.card__item__img{
+    margin: -28px 0 0 0;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    border-radius: 5%;
+    vertical-align: middle;
+}
+.card__body{
+    padding: 0px 5px;
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+}
+.card__body>h4{
+    margin: 30px 0px;
+}
+.card__body>button{
+    margin-top: 20px;
+}
+.card__scroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    align-items:center;
+    padding-right: 100px;
+}
+.card__scroll__mouse_wrap{
+    background-image: url(../img/mouse-bg.svg);
+    background-repeat: no-repeat;
+    width: 108px;
+    height: 108px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+}
+.card__scroll>h6{
+    transform: rotate(90deg);
+    color: #C4A36B;
+    margin-bottom: 53px;
+    font-size:18px;
+    font-weight: normal
+}

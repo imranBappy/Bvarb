@@ -1,0 +1,80 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 800px) {
+    /* arbitrage */
+        div.arbitrage>div.container>div.arbitrage__wrap{
+            width: 100%;
+            height: 800px;
+            position: relative;
+        }
+        div.arbitrage>div.container>div.arbitrage__wrap>div.arbitrage__bg>div.arbitrage__content{
+            justify-content: space-evenly;
+        }
+}
+
+@media only screen and (max-width: 768px) {
+
+    
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .navbar__registration__link,
+    .navbar__login__link{
+        display: none !important;
+    }
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__links_wrap{
+        min-width:120px;
+    }
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__logo_wpar{
+        min-width:124px;
+    }
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__links_wrap>a:last-child{
+        flex-shrink: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__links_wrap>a:last-child>img{
+        width: 14px;
+        height: 14px;
+    }
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__links_wrap>div.navbar_languages{
+        width: 30px;
+    }
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__links_wrap>div.navbar_languages>a>img{
+        width: 30px;
+        height: 30px;
+    }
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__links_wrap{
+        min-width:100px;
+    }
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__logo_wpar{
+        min-width:124px;
+    }
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__logo_wpar>a>img.navbar__logo{
+        width: 100.35px;
+        margin: 0px 10px;
+    }
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__links_wrap>a:last-child{
+        width: 30px;
+        height: 30px;
+    }
+    nav.navbar>div.header__container>div.navbar__wrap>div.navbar__links_wrap>a:last-child>img{
+        height: 10.9;
+        width: 10.9;
+    }
+}
